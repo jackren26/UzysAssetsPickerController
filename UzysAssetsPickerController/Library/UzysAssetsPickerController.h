@@ -12,10 +12,10 @@
 
 @class UzysAssetsPickerController;
 @protocol UzysAssetsPickerControllerDelegate<NSObject>
-- (void)UzysAssetsPickerController:(UzysAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets;
+- (void)assetsPickerController:(UzysAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets;
 @optional
-- (void)UzysAssetsPickerControllerDidCancel:(UzysAssetsPickerController *)picker;
-- (void)UzysAssetsPickerControllerDidExceedMaximumNumberOfSelection:(UzysAssetsPickerController *)picker;
+- (void)assetsPickerControllerDidCancel:(UzysAssetsPickerController *)picker;
+- (void)assetsPickerControllerDidExceedMaximumNumberOfSelection:(UzysAssetsPickerController *)picker;
 @end
 
 @interface UzysAssetsPickerController : UIViewController

@@ -116,7 +116,7 @@
 }
 
 #pragma mark - UzysAssetsPickerControllerDelegate methods
-- (void)UzysAssetsPickerController:(UzysAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets
+- (void)assetsPickerController:(UzysAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets
 {
     self.imageView.backgroundColor = [UIColor clearColor];
     DLog(@"assets %@",assets);
@@ -177,7 +177,7 @@
     
 }
 
-- (void)UzysAssetsPickerControllerDidExceedMaximumNumberOfSelection:(UzysAssetsPickerController *)picker
+- (void)assetsPickerControllerDidExceedMaximumNumberOfSelection:(UzysAssetsPickerController *)picker
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
                                                     message:@"Exceed Maximum Number Of Selection"
